@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FF3939</color>
+    <color name="purple_500">#FF3939</color>
+    <color name="purple_700">#FF3939</color>
+    <color name="teal_200">#FF3939</color>
+    <color name="teal_700">#FF3939</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="appClr">#FF3939</color>
+    <color name="appClrDark">#FF3939</color>
+    <color name="backClr">#FFFFFF</color>
+    <color name="cardClr">#3B2C3D</color>
+    <color name="darkClr">#232B3E</color>
+    <color name="iconClr">#808080</color>
+    <color name="green">#009959</color>
+    <color name="yellow">#FFBA00</color>
+    <color name="golden">#F96F30</color>
+    <color name="hintText">#808080</color>
+    <color name="btnClr">#34495E</color>
+    <color name="loginClr">#443546</color>
+
+    <color name="colorText">#232323</color>
+    <color name="colorTextDem">#acacac</color>
+    <color name="colorLightIcon">#909694</color>
+    <color name="colorTextGreen">#12d591</color>
+    <color name="light_grey">#CCCCCC</color>
+    <color name="colorUnselected">#e6e6f8</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_color_light">#909694</color>
+    <color name="blue">#3DA2FF</color>
+    <color name="shimmer_effect_color">#BFBDBD</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="ad_bg_color">#e7f5e5</color>
+    <color name="colorThemeBlue">#1080d1</color>
+    <color name="color_ads_button">#108d0d</color>
+    <color name="colorTextDark">#171719</color>
+    <color name="translucentBlack">#77000000</color>
+    <color name="redColor">#FF0000</color>
+    <color name="home_rv_bg_ip">#F5EDFF</color>
+
+    <color name="premium_orange">#FFA438</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="red">#66910303</color>
+</resources>
