@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         binding.rate.setOnClickListener {
             val intent = Intent(
                 Intent.ACTION_VIEW,
-                Uri.parse("https://play.google.com/store/apps/details?id=com.codrax.digitalqanoon")
+                Uri.parse("https://play.google.com/store/apps/details?id=xyz.appmaker.robcpj")
             )
             startActivity(intent)
         }

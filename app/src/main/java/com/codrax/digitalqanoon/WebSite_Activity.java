@@ -56,16 +56,16 @@ public class WebSite_Activity extends AppCompatActivity {
     // the same for Android 5.0 methods only
     private ValueCallback<Uri[]> mFilePathCallback;
     private String mCameraPhotoPath;
-    private ProgressDialog progressDialog;
+    //private ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_site);
 
-        progressDialog = new ProgressDialog(this);
+        /*progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Loading...");
-        progressDialog.setCancelable(false);
+        progressDialog.setCancelable(false);*/
 
         webView = findViewById(R.id.webview);
         textView = findViewById(R.id.textview);
@@ -161,13 +161,13 @@ public class WebSite_Activity extends AppCompatActivity {
 
     private void checkConnection() {
         if (isOnline()){
-            webView.loadUrl("https://digi.bsite.net/");
+            webView.loadUrl("https://infetech.solutions/");
             WebSettings webSettings = webView.getSettings();
             webSettings.setJavaScriptEnabled(true);
             webView.getSettings().setLoadsImagesAutomatically(true);
             webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
             webView.setWebViewClient(new WebViewClient());
-            webView.setWebViewClient(new Browser_Home(progressDialog));
+            webView.setWebViewClient(new Browser_Home());
             webView.setWebChromeClient(new ChromeClient());
             webSettings.setAllowFileAccess(true);
             //webSettings.setAppCacheEnabled(true);
@@ -327,22 +327,20 @@ public class WebSite_Activity extends AppCompatActivity {
 
     //fullscreen videos
     private static class Browser_Home extends WebViewClient {
-        private ProgressDialog progressDialog;
-
-        Browser_Home(ProgressDialog progressDialog) {
-            this.progressDialog = progressDialog;
+        Browser_Home() {
+            //this.progressDialog = progressDialog;
         }
 
         @Override
         public void onPageStarted(WebView view, String url, Bitmap favicon) {
             super.onPageStarted(view, url, favicon);
-            progressDialog.show(); // Show the progress dialog when a page starts loading.
+            //progressDialog.show(); // Show the progress dialog when a page starts loading.
         }
 
         @Override
         public void onPageFinished(WebView view, String url) {
             super.onPageFinished(view, url);
-            progressDialog.dismiss(); // Dismiss the progress dialog when the page has finished loading.
+            //progressDialog.dismiss(); // Dismiss the progress dialog when the page has finished loading.
         }
     }
 
