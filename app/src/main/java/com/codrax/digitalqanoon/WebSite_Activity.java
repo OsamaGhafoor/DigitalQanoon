@@ -161,7 +161,7 @@ public class WebSite_Activity extends AppCompatActivity {
 
     private void checkConnection() {
         if (isOnline()){
-            webView.loadUrl("https://infetech.solutions/");
+            webView.loadUrl("https://www.studypros.online/");
             WebSettings webSettings = webView.getSettings();
             webSettings.setJavaScriptEnabled(true);
             webView.getSettings().setLoadsImagesAutomatically(true);
